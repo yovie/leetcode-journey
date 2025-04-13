@@ -20,9 +20,10 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     return NULL;
 }
 
-void main() {
+int main() {
     int input[] = {2,7,11,15};
     int *retSize = malloc(sizeof(int) * 1);
     int *result = twoSum(input, 4, 9, retSize);
     printf ("[%d, %d]", *(result), *(result+1));
+    return 0;
 }
